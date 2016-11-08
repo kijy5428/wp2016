@@ -1,0 +1,7 @@
+css subclass
+
+row column colspan rowspan
+
+thead  tbody tfoot 
+
+小心 div 的size (height / width)會拉寬我們的表格
