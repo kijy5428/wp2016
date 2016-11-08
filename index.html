@@ -2,17 +2,47 @@
 <html>
 <head>
 	<title>Personal Website</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
 	
+	<!-- Place somewhere in the <head> of your document -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/card_flip.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<!-- Place in the <head>, after the three links -->
+		<script type="text/javascript" charset="utf-8">
+		  $(window).load(function() {
+		    $('.flexslider').flexslider();
+		  });
+	</script>
+		
 </head>
 <body>
 <div id="wrapper" class="wrapper">
 	<div class="header1">
-
 	
 	</div>
-	<div class="header2">	
-		<img src="pic/header2.png"  class="pic1">
+
+	<div class="header2">					
+		<div class="flexslider">
+		  <ul class="slides">
+
+		  	<li>
+		      <img src="pic/header2.png" class= "pic1" />
+		    </li>
+		    <li>
+		      <img src="pic/slide1.jpg"  />
+		    </li>
+		    <li>
+		      <img src="pic/slide2.jpg"  />
+		    </li>
+		    <li>
+		      <img src="pic/slide3.jpg" />
+		    </li>
+		  </ul>
+		</div>	-
+		
+		<img src="pic/header2.png" class="pic1">
 	</div>
 
 	
@@ -60,13 +90,13 @@
 				</thead>
 				<tbody>
 					<tr >
-						<td class="firstCol">姓名</td>
-						<td>許晉愷</td>
+						<td class="firstCol">E-mail</td>
+						<td>kijy5428@gmail.com</td>
 					</tr>
 
 					<tr>
-						<td class="firstCol">校系所</td>
-						<td>成大資管所</td>
+						<td class="firstCol">Tel  </td>
+						<td>0958990902</td>
 					</tr>
 
 					<tr>
@@ -86,15 +116,33 @@
 
 
 		<div class="right">
-			<div class="info3"> 
+			
+			<!--<div class="info3"> 
 				<img src="pic/self-pic2.png" class="pic2">
 			</div>
+			-->
+
+			<div class="info3">
+				<div class="card-container">
+				  	<div class="card">
+					    <div class="side">
+					    	<img src="pic/self-pic2.png" alt="Jimmy Eat World"  class="pic2">
+					    </div>
+				    	<div class="side back">
+				    		<img src="pic/jake.jpg" alt="Jimmy Eat World"  class="pic2">
+				    	</div>
+			  		</div>
+				</div>
+			</div>
+
+
+
 
 			<div class="picSeries">
-				<img src="pic/google_plus.png" class="info3Pic">
-				<img src="pic/facebook.png" class="info3Pic">
-				<img src="pic/github.png" class="info3Pic">
-				<img src="pic/linkedin.png" class="info3Pic">
+				<a href="https://plus.google.com/u/0/106642477283844669606"><img src="pic/google_plus.png" class="info3Pic grow"></a>
+				<a href="https://www.facebook.com/profile.php?id=100001182391298"><img src="pic/facebook.png" class="info3Pic grow"></a>
+				<a href="https://github.com/kijy5428"><img src="pic/github.png" class="info3Pic grow"></a>
+				<a href="https://www.linkedin.com/in/%E8%BF%91%E6%A5%B7-%E9%9C%80-562a4999?trk=nav_responsive_tab_profile"><img src="pic/linkedin.png" class="info3Pic grow"></a>
 			</div>
 
 		</div>
@@ -102,6 +150,3 @@
 
 	</div>
 	
-
-
-
